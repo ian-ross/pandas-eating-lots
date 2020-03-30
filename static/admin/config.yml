@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: ian-ross/pandas-eating-lots
+  branch: master
+publish_mode: editorial_workflow
+media_folder: src/images
+public_folder: /images
+collections:
+  - name: pages
+    label: Pages
+    folder: src/pages
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widet: "markdown"}
